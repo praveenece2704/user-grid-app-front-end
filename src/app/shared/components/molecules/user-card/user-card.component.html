@@ -1,0 +1,9 @@
+<div *ngIf="user" class="user-card card shadow-sm mb-4" (click)="viewDetails(user.id)">
+    <img [src]="user.image" alt="{{ user.firstName }}" class="user-image card-img-top" />
+    <div class="card-body text-center">
+      <h3 class="card-title text-purple">{{ user.firstName }} {{ user.lastName }}</h3>
+      <p class="card-text text-muted">{{ user.username }}</p>
+      <p class="card-text text-muted">{{ user.email }}</p>
+    </div>
+  </div>
+  

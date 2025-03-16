@@ -1,0 +1,25 @@
+<div class="filters">
+    <!-- Role Filter -->
+    <div class="role-filter">
+      <label for="role">Filter by Role:</label>
+      <select id="role" (change)="onRoleChange($event)">
+        <option value="">All</option>
+        <option *ngFor="let role of roles" [value]="role">{{ role }}</option>
+      </select>
+    </div>
+  
+    <!-- Sort Order Filter -->
+    <div class="sort-filter">
+      <label for="sortOrder">Sort by Age:</label>
+      <select id="sortOrder" (change)="onSortOrderChange($event)">
+        <option value="asc">Ascending</option>
+        <option value="desc">Descending</option>
+      </select>
+    </div>
+  </div>
+  
+  <!-- Display Users -->
+  <div class="user-grid">
+    <app-user-card *ngFor="let user of users" [user]="user"></app-user-card>
+  </div>
+  

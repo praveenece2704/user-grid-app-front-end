@@ -1,0 +1,49 @@
+
+.user-card {
+    background-color: #ffffff; 
+    border-radius: 10px; 
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .user-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(11, 29, 141, 0.2); 
+  }
+  
+  .user-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%; 
+    object-fit: cover; 
+    border: 4px solid #4D148C; 
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  .user-card:hover .user-image {
+    transform: scale(1.05); 
+  }
+  
+  .user-card h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #4D148C; 
+    margin: 10px 0;
+    text-transform: capitalize;
+  }
+  
+  .user-card p {
+    font-size: 14px;
+    color: #555555;
+    margin: 5px 0;
+  }
+ 
